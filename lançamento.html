@@ -2,104 +2,124 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Elton Pereira" />
-  <meta name="description" content="Avaliação da parte prática de html" />
-  <meta name="keywords" content="Avaliação, Senai, Cimatec, elton, Web-design, Ford Enter" />
+  <meta charset="UTF-8"> 
+  <meta name="author" content="Elton Pereira" /> 
+  <meta name="description" content="Avaliação da parte prática de html" /> 
+  <meta name="keywords" content="Avaliação, Senai, Cimatec, elton, Web-design, Ford Enter" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <title>Home</title>
+  <!-- Título da página que aparece na aba do navegador -->
+  <title>Lançamento</title>
 
+  <!-- Link para o arquivo de estilo CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Lançamento</title>
 </head>
 
 <body>
+  <!-- Cabeçalho da página com a barra de navegação -->
   <header>
     <nav>
+      <!-- Logo da Ford -->
       <div class="logomenu">
         <img src="img/logo-ford-256.png" alt="Logo Ford" />
       </div>
 
+      <!-- Menu de navegação -->
       <div class="links">
-        <a href="index.html">Home</a>
-        <a href="lançamento.html">Lançamento</a>
-        <a href="contato.html">Contato</a>
+        <a href="index.html">Home</a> <!-- Link para a página inicial -->
+        <a href="lançamento.html">Lançamento</a> <!-- Link para a página de lançamento -->
+        <a href="contato.html">Contato</a> <!-- Link para a página de contato -->
       </div>
     </nav>
   </header>
+
+  <!-- Corpo principal da página -->
   <main>
-    <iframe width="800" height="400" src="https://www.youtube.com/embed/vQsryuNmsL0" frameborder="0" allowfullscreen>
-    </iframe>
+    <!-- Contêiner para o vídeo do YouTube -->
+    <div class="video-container">
+      <!-- Iframe para embutir o vídeo -->
+      <iframe src="https://www.youtube.com/embed/vQsryuNmsL0" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Descrição do lançamento -->
     <p class="discricao1">Ford Ranger 2022. A evolução do segmento</p>
     <p>Robustez | Tecnologia | Segurança</p>
 
+    <!-- Tabela para exibir informações sobre os modelos de carros -->
     <table>
       <tr>
         <td>
-
-          </div>
-
+        </td>
       </tr>
       <tr>
-       <div class="container-carros">
-  <div class="carro-card">
-    <div class="carro-imagem">
-      <img src="img/XL Cabine.jpg" alt="Carro 1">
-    </div>
-    <div class="carro-info">
-      <div class="carro-nome">XL Cabine</div>
-      <div class="carro-preco">      <input type="checkbox">
-R$ 120.000 <span class="info-icon"><img src="img/info.png" alt=""></span></div>
-    </div>
-  </div>
+        <!-- Contêiner para os cards dos carros -->
+        <div class="container-carros">
+          <!-- Card 1 -->
+          <div class="carro-card">
+            <div class="carro-imagem">
+              <img src="img/XL Cabine.jpg" alt="Carro 1">
+            </div>
+            <div class="carro-info">
+              <div class="carro-nome">XL Cabine</div>
+              <div class="carro-preco">
+                <input type="checkbox">
+                R$ 120.000 <span class="info-icon"><img src="img/info.png" alt=""></span>
+              </div>
+            </div>
+          </div>
 
-  <div class="carro-card">
-    <div class="carro-imagem">
-      <img src="img/storm.jpg" alt="Carro 2">
-    </div>
-    <div class="carro-info">
-      <div class="carro-nome">Sport Turbo</div>
-      <div class="carro-preco">      <input type="checkbox">
-R$ 145.000 <span class="info-icon"><img src="img/info.png" alt=""></span></div>
-    </div>
-  </div>
+          <!-- Card 2 -->
+          <div class="carro-card">
+            <div class="carro-imagem">
+              <img src="img/storm.jpg" alt="Carro 2">
+            </div>
+            <div class="carro-info">
+              <div class="carro-nome">Sport Turbo</div>
+              <div class="carro-preco">
+                <input type="checkbox">
+                R$ 145.000 <span class="info-icon"><img src="img/info.png" alt=""></span>
+              </div>
+            </div>
+          </div>
 
-  <div class="carro-card">
-    <div class="carro-imagem">
-      <img src="img/xls 2.2 diesel.jpg" alt="Carro 3">
-    </div>
-    <div class="carro-info">
-      <div class="carro-nome">SUV Elite</div>
-      <div class="carro-preco">      <input type="checkbox">
-R$ 199.000 <span class="info-icon"><img src="img/info.png" alt=""></span></div>
+          <!-- Card 3 -->
+          <div class="carro-card">
+            <div class="carro-imagem">
+              <img src="img/xls 2.2 diesel.jpg" alt="Carro 3">
+            </div>
+            <div class="carro-info">
+              <div class="carro-nome">SUV Elite</div>
+              <div class="carro-preco">
+                <input type="checkbox">
+                R$ 199.000 <span class="info-icon"><img src="img/info.png" alt=""></span>
+              </div>
             </div>
           </div>
         </div>
     </table>
 
-
+    <!-- Botão para acionar uma função de compra -->
+    <button class="botao-comprar" onclick="comprar()">Comprar</button>
   </main>
 
+  <!-- Rodapé da página -->
   <footer>
-
-
+    <!-- Ícones das redes sociais -->
     <div class="redes-sociais">
-
       <a href="#"><img src="img/facebook-50.png" alt="Facebook" /></a>
       <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
       <a href="#"><img src="img/youtube-squared-50.png" alt="YouTube" /></a>
-
     </div>
 
+    <!-- Texto de copyright -->
     <p id="cop">&copy; 2025 Ford Brasil. Todos os direitos reservados.</p>
 
+    <!-- Imagem adicional do Ford -->
     <div id="foto-ford">
-      <a class="imagem-ford" href="#"><img src="img/imagem.ford.png" /></a>
+      <a class="imagem-ford" href="#"><img src="img/imagem.ford.png" alt="Ford" /></a>
     </div>
   </footer>
-  <h1></h1>
-
 
 </body>
 

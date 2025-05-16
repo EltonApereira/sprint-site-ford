@@ -2,80 +2,93 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="author" content="Elton Pereira" />
-  <meta name="description" content="Avaliação da parte prática de html" />
-  <meta name="keywords" content="Avaliação, Senai, Cimatec, elton, Web-design, Ford Enter" />
+  <!-- Metadados sobre a página -->
+  <meta charset="UTF-8"> <!-- Codificação de caracteres -->
+  <meta name="author" content="Elton Pereira" /> <!-- Autor do site -->
+  <meta name="description" content="Avaliação da parte prática de html" /> <!-- Descrição da página -->
+  <meta name="keywords" content="Avaliação, Senai, Cimatec, elton, Web-design, Ford Enter" /> <!-- Palavras-chave para SEO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade em dispositivos móveis -->
 
-  <title>Home</title>
-
+  <!-- Título da página -->
+  <title>Lançamento</title>
+  
+  <!-- Link para o arquivo CSS -->
   <link rel="stylesheet" href="css/style.css">
-
-  <title>Contato</title>
 </head>
 
 <body>
+  <!-- Cabeçalho da página -->
   <header>
     <nav>
-    <div class="logomenu">
-      <img src="img/logo-ford-256.png" alt="Logo Ford" />
-    </div>
-   
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="lançamento.html">Lançamento</a>
-      <a href="contato.html">Contato</a>
-    </div>
-  </nav>
+      <!-- Logo da Ford -->
+      <div class="logomenu">
+        <img src="img/logo-ford-256.png" alt="Logo Ford" />
+      </div>
+
+      <!-- Menu de navegação -->
+      <div class="links">
+        <a href="index.html">Home</a> <!-- Link para a página Home -->
+        <a href="lançamento.html">Lançamento</a> <!-- Link para a página Lançamento -->
+        <a href="contato.html">Contato</a> <!-- Link para a página Contato -->
+      </div>
+    </nav>
   </header>
+
+  <!-- Corpo principal da página -->
   <main>
     <div class="container">
-    <img src="img/storm.jpg" alt="Ilustração" class="imagem">
-  <form class="formulario">
-        <h2>Fale Conosco</h2>
+      <!-- Imagem principal da página -->
+      <img src="img/storm.jpg" alt="Ilustração" class="imagem">
 
-    <label>Nome:</label>
-    <input type= "text" placeholder="Digite seu nome completo">
+      <!-- Formulário de contato -->
+      <form class="formulario">
+        <h2>Fale Conosco</h2> <!-- Título do formulário -->
 
-    <label>Email:</label>
-    <input type="email" placeholder="exemplo@email.com">
+        <!-- Campo para o nome -->
+        <label>Nome:</label>
+        <input type="text" placeholder="Digite seu nome completo">
 
-    <label>Telefone:</label>
-    <input type="tel" placeholder="(00) 00000-0000">
+        <!-- Campo para o e-mail -->
+        <label>Email:</label>
+        <input type="email" placeholder="exemplo@email.com">
 
-    <label>Assunto:</label>
-    <select id="assunto" name="assunto">
-  <option value="">Selecione uma opção</option>
-  <option value="Elogios">Elogios</option>
-  <option value="Reclamação">Reclamação</option>
-  <option value="Solicitação">Solicitação</option>
-    </select>
+        <!-- Campo para o telefone -->
+        <label>Telefone:</label>
+        <input type="tel" placeholder="(00) 00000-0000">
 
-    <label>Mensagem:</label>
-  <textarea placeholder="Digite sua mensagem aqui..."></textarea>
-  
+        <!-- Campo para selecionar o assunto -->
+        <label>Assunto:</label>
+        <select id="assunto" name="assunto">
+          <option value="Elogios">Elogios</option>
+          <option value="Reclamação">Reclamação</option>
+          <option value="Solicitação">Solicitação</option>
+        </select>
 
-    <button type="submit">Enviar</button>
-    
-  </form>
-  
-</div>
+        <!-- Campo para mensagem -->
+        <label>Mensagem:</label>
+        <textarea placeholder="Digite sua mensagem aqui..."></textarea>
 
-
+        <!-- Botão de envio do formulário -->
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </main>
-  <footer>
 
+  <!-- Rodapé da página -->
+  <footer>
+    <!-- Ícones das redes sociais -->
     <div class="redes-sociais">
-      <p>Redes Sociais</p>
       <a href="#"><img src="img/facebook-50.png" alt="Facebook" /></a>
       <a href="#"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
       <a href="#"><img src="img/youtube-squared-50.png" alt="YouTube" /></a>
-
     </div>
+
+    <!-- Texto de copyright -->
     <p id="cop">&copy; 2025 Ford Brasil. Todos os direitos reservados.</p>
 
+    <!-- Imagem adicional do Ford -->
     <div id="foto-ford">
-      <a class="imagem-ford" href="#"><img src="img/imagem.ford.png" /></a>
+      <a class="imagem-ford" href="#"><img src="img/imagem.ford.png" alt="Ford" /></a>
     </div>
   </footer>
 
